@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity implements ConnectionCallbac
     @Override
     public void onLocationChanged(Location location) {
         Log.d(TAG, "in onLocationChanged");
-        latTextView.setText(location.toString());
+        latTextView.setText(Double.toString(location.getLatitude()));
 
     }
 
